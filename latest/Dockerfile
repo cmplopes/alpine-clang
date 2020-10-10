@@ -3,6 +3,7 @@ LABEL maintainer="Carlos Lopes (cmplopes67@gmail.com)"
 
 RUN apk add --no-cache bash bash-doc bash-completion
 RUN apk add --no-cache clang clang-dev alpine-sdk dpkg
+RUN apk add --no-cache libomp-dev
 
 RUN ln -sf /usr/bin/clang /usr/bin/cc
 RUN ln -sf /usr/bin/clang++ /usr/bin/c++
